@@ -78,7 +78,7 @@ export function HeroSection() {
               <div className="relative w-full aspect-square rounded-3xl overflow-hidden shadow-2xl border-2 border-white/50 backdrop-blur-sm">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1A365D]/20 via-[#4FD1C5]/10 to-transparent z-5"></div>
                 <img
-                  src="src/assets/mulher.png"
+                  src="/assets/mulher.png"
                   alt="Clínica Odontológica Moderna"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

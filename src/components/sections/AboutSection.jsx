@@ -14,7 +14,7 @@ export function AboutSection() {
             <div className="absolute -inset-4 bg-gradient-to-r from-[#4FD1C5] to-[#30a3c8] rounded-3xl opacity-20 blur-2xl group-hover:opacity-40 transition duration-500"></div>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-white/50">
               <img
-                src="src/assets/dentista.jpg"
+                src="/assets/dentista.jpg"
                 alt="Profissional da Clínica"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />

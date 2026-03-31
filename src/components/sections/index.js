@@ -1,0 +1,6 @@
+export { HeroSection } from './HeroSection'
+export { DifferencesSection } from './DifferencesSection'
+export { ServicesSection } from './ServicesSection'
+export { AboutSection } from './AboutSection'
+export { CTASection } from './CTASection'
+export { Footer } from './Footer'

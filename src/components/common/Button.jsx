@@ -5,13 +5,13 @@ export function Button({
   className = '',
   ...props
 }) {
-  const baseStyles = 'font-semibold rounded-lg transition-all duration-300 inline-flex items-center justify-center gap-2'
+  const baseStyles = 'font-semibold rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 relative overflow-hidden'
 
   const variants = {
-    primary: 'bg-[#1A365D] text-white hover:bg-[#0f1f3a] shadow-md hover:shadow-lg',
-    secondary: 'bg-[#2D3748] text-white hover:bg-[#1a202c] shadow-md hover:shadow-lg',
-    tertiary: 'bg-[#4FD1C5] text-[#1A365D] hover:bg-[#3eb9ad] shadow-md hover:shadow-lg',
-    outline: 'border-2 border-[#1A365D] text-[#1A365D] hover:bg-[#1A365D] hover:text-white',
+    primary: 'bg-gradient-to-r from-[#1A365D] to-[#0f1f3a] text-white hover:shadow-xl hover:shadow-[#1A365D]/50 active:scale-95',
+    secondary: 'bg-gradient-to-r from-[#2D3748] to-[#1a202c] text-white hover:shadow-xl hover:shadow-[#2D3748]/50 active:scale-95',
+    tertiary: 'bg-gradient-to-r from-[#4FD1C5] to-[#30a3c8] text-[#1A365D] hover:shadow-xl hover:shadow-[#4FD1C5]/50 active:scale-95 font-bold',
+    outline: 'border-2 border-[#1A365D] text-[#1A365D] hover:bg-[#1A365D] hover:text-white hover:shadow-lg active:scale-95',
   }
 
   const sizes = {

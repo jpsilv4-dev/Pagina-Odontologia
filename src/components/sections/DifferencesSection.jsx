@@ -3,13 +3,13 @@ import { Card } from '../common'
 
 export function DifferencesSection() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-[#F7FAFC] via-white to-[#f8feff] relative overflow-hidden">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-[#F7FAFC] via-white to-[#f8feff] relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-[#1A365D] opacity-5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#4FD1C5] opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-40 h-40 sm:w-72 sm:h-72 bg-[#1A365D] opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-48 h-48 sm:w-96 sm:h-96 bg-[#4FD1C5] opacity-5 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-3 gap-8 mt-10">
+        <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mt-6 sm:mt-10">
           {clinicaConfig.differences.map((diff, index) => (
             <Card
               key={index}
@@ -20,8 +20,8 @@ export function DifferencesSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#4FD1C5]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
-                <div className="text-7xl mb-6 group-hover:scale-125 transition-transform duration-300">{diff.icon}</div>
-                <div className="text-4xl font-bold bg-gradient-to-r from-[#1A365D] to-[#4FD1C5] bg-clip-text text-transparent mb-3">
+                <div className="text-5xl sm:text-6xl lg:text-7xl mb-4 sm:mb-6 group-hover:scale-125 transition-transform duration-300">{diff.icon}</div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#1A365D] to-[#4FD1C5] bg-clip-text text-transparent mb-2 sm:mb-3">
                   {diff.number}
                 </div>
                 <p className="text-[#2D3748] text-sm leading-relaxed font-medium">

@@ -3,12 +3,12 @@ import { Check } from 'lucide-react'
 
 export function AboutSection() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-white via-[#f8feff] to-white relative overflow-hidden">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-white via-[#f8feff] to-white relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute -top-32 right-0 w-96 h-96 bg-[#4FD1C5] opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute -top-32 right-0 w-48 h-48 sm:w-96 sm:h-96 bg-[#4FD1C5] opacity-5 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center">
           {/* Imagem com efeitos */}
           <div className="relative animate-slide-in-up">
             <div className="absolute -inset-4 bg-gradient-to-r from-[#4FD1C5] to-[#30a3c8] rounded-3xl opacity-20 blur-2xl group-hover:opacity-40 transition duration-500"></div>
@@ -32,7 +32,7 @@ export function AboutSection() {
               <p className="text-sm font-semibold text-[#4FD1C5]">SOBRE NÓS</p>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1A365D] mb-8 leading-tight">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#1A365D] mb-6 sm:mb-8 leading-tight">
               {clinicaConfig.aboutTitle}
             </h2>
 
@@ -57,6 +57,6 @@ export function AboutSection() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }

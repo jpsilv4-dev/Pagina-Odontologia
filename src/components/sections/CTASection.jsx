@@ -10,18 +10,18 @@ export function CTASection() {
   const whatsappLink = `https://wa.me/55${phoneNumber}?text=${message}`
 
   return (
-    <section className="py-32 px-4 bg-gradient-to-br from-[#1A365D] via-[#0f1f3a] to-[#2D3748] relative overflow-hidden">
+    <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-gradient-to-br from-[#1A365D] via-[#0f1f3a] to-[#2D3748] relative overflow-hidden\">
       {/* Animated background elements */}
-      <div className="absolute top-0 left-1/2 w-96 h-96 bg-[#4FD1C5] opacity-10 rounded-full blur-3xl -translate-x-1/2 animate-pulse-slow"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#4FD1C5] opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-1/2 w-48 h-48 sm:w-96 sm:h-96 bg-[#4FD1C5] opacity-10 rounded-full blur-3xl -translate-x-1/2 animate-pulse-slow\"></div>
+      <div className="absolute bottom-0 right-0 w-40 h-40 sm:w-96 sm:h-96 bg-[#4FD1C5] opacity-5 rounded-full blur-3xl\"></div>
 
       <div className="max-w-4xl mx-auto text-center text-white relative z-10">
         <div className="animate-fade-in">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-            Pronto para sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4FD1C5] to-[#30a3c8]">obra de arte</span>?
+          <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-6 sm:mb-8 leading-tight">
+            Pronto para sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4FD1C5] to-[#30a3c8]">\obra de arte</span>?
           </h2>
 
-          <p className="text-xl mb-12 text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
             Agende uma avaliação personalizada com nossos especialistas e descubra as possibilidades ilimitadas para transformar seu sorriso.
           </p>
 
@@ -37,21 +37,21 @@ export function CTASection() {
           </a>
 
           {/* Trust indicators */}
-          <div className="mt-14 grid md:grid-cols-3 gap-6 max-w-2xl mx-auto">
-            <div className="p-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 hover:border-[#4FD1C5]/50 transition">
-              <p className="text-2xl font-bold text-[#4FD1C5] mb-1">💬</p>
-              <p className="text-sm font-medium">Resposta rápida</p>
-              <p className="text-xs text-gray-400">até 2 horas</p>
+          <div className="mt-8 sm:mt-12 md:mt-14 grid sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-2xl mx-auto">
+            <div className="p-3 sm:p-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 hover:border-[#4FD1C5]/50 transition">
+              <p className="text-xl sm:text-2xl font-bold text-[#4FD1C5] mb-1">💬</p>
+              <p className="text-xs sm:text-sm font-medium">Resposta rápida</p>
+              <p className="text-xs sm:text-xs text-gray-400">até 2 horas</p>
             </div>
-            <div className="p-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 hover:border-[#4FD1C5]/50 transition">
-              <p className="text-2xl font-bold text-[#4FD1C5] mb-1">🔒</p>
-              <p className="text-sm font-medium">Dados seguro</p>
-              <p className="text-xs text-gray-400">100% privado</p>
+            <div className="p-3 sm:p-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 hover:border-[#4FD1C5]/50 transition">
+              <p className="text-xl sm:text-2xl font-bold text-[#4FD1C5] mb-1">🔒</p>
+              <p className="text-xs sm:text-sm font-medium">Dados seguro</p>
+              <p className="text-xs sm:text-xs text-gray-400">100% privado</p>
             </div>
-            <div className="p-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 hover:border-[#4FD1C5]/50 transition">
-              <p className="text-2xl font-bold text-[#4FD1C5] mb-1">⭐</p>
-              <p className="text-sm font-medium">Avaliação grátis</p>
-              <p className="text-xs text-gray-400">sem compromisso</p>
+            <div className="p-3 sm:p-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 hover:border-[#4FD1C5]/50 transition">
+              <p className="text-xl sm:text-2xl font-bold text-[#4FD1C5] mb-1">⭐</p>
+              <p className="text-xs sm:text-sm font-medium">Avaliação grátis</p>
+              <p className="text-xs sm:text-xs text-gray-400">sem compromisso</p>
             </div>
           </div>
         </div>

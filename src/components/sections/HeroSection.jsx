@@ -10,24 +10,24 @@ export function HeroSection() {
   const whatsappLink = `https://wa.me/55${phoneNumber}?text=${message}`
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#F7FAFC] via-white to-[#f0f9ff] flex items-center pt-20 overflow-hidden relative">
+    <section className="min-h-screen bg-gradient-to-b from-[#F7FAFC] via-white to-[#f0f9ff] flex items-center pt-24 sm:pt-20 overflow-hidden relative">
       {/* Elementos decorativos de fundo */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-[#4FD1C5] opacity-10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-10 w-72 h-72 bg-[#1A365D] opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute top-10 right-0 w-40 h-40 sm:w-72 sm:h-72 bg-[#4FD1C5] opacity-10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-40 h-40 sm:w-72 sm:h-72 bg-[#1A365D] opacity-5 rounded-full blur-3xl"></div>
 
-      <div className="max-w-7xl mx-auto w-full px-4 relative z-10">
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 relative z-10">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           {/* Conteúdo */}
           <div className="order-2 md:order-1 animate-fade-in">
-            <div className="inline-block bg-gradient-to-r from-[#4FD1C5] to-[#30a3c8] text-[#1A365D] px-5 py-2.5 rounded-full text-sm font-bold mb-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="inline-block bg-gradient-to-r from-[#4FD1C5] to-[#30a3c8] text-[#1A365D] px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 shadow-md hover:shadow-lg transition-shadow">
               ✨ EXCELÊNCIA EM CADA DETALHE
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A365D] mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A365D] mb-4 sm:mb-6 leading-tight">
               Seu sorriso é nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4FD1C5] to-[#30a3c8]">obra de arte</span>
             </h1>
 
-            <p className="text-lg text-[#2D3748] mb-8 leading-relaxed font-light">
+            <p className="text-base sm:text-lg text-[#2D3748] mb-6 sm:mb-8 leading-relaxed font-light">
               Combinamos tecnologia de ponta com uma abordagem artística para criar resultados que transcendem a odontologia tradicional. Bem-vindo à nossa estética dental.
             </p>
 
@@ -55,15 +55,15 @@ export function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="mt-12 flex items-center gap-8 flex-wrap">
-              <div className="p-4 rounded-lg bg-gradient-to-br from-[#4FD1C5]/10 to-transparent border-l-4 border-[#4FD1C5]">
-                <div className="text-3xl font-bold text-[#4FD1C5]">5.000+</div>
-                <p className="text-sm text-[#2D3748] whitespace-nowrap font-medium">Sorrisos transformados</p>
+            <div className="mt-8 sm:mt-12 flex items-center gap-4 sm:gap-8 flex-wrap">
+              <div className="p-3 sm:p-4 rounded-lg bg-gradient-to-br from-[#4FD1C5]/10 to-transparent border-l-4 border-[#4FD1C5]">
+                <div className="text-2xl sm:text-3xl font-bold text-[#4FD1C5]">5.000+</div>
+                <p className="text-xs sm:text-sm text-[#2D3748] whitespace-nowrap font-medium">Sorrisos transformados</p>
               </div>
-              <div className="w-px h-16 bg-gradient-to-b from-transparent via-[#4FD1C5] to-transparent"></div>
-              <div className="p-4 rounded-lg bg-gradient-to-br from-[#1A365D]/10 to-transparent border-l-4 border-[#1A365D]">
-                <div className="text-3xl font-bold text-[#1A365D]">38</div>
-                <p className="text-sm text-[#2D3748] whitespace-nowrap font-medium">Anos de excelência</p>
+              <div className="hidden sm:block w-px h-16 bg-gradient-to-b from-transparent via-[#4FD1C5] to-transparent"></div>
+              <div className="p-3 sm:p-4 rounded-lg bg-gradient-to-br from-[#1A365D]/10 to-transparent border-l-4 border-[#1A365D]">
+                <div className="text-2xl sm:text-3xl font-bold text-[#1A365D]">38</div>
+                <p className="text-xs sm:text-sm text-[#2D3748] whitespace-nowrap font-medium">Anos de excelência</p>
               </div>
             </div>
           </div>
